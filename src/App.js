@@ -1,31 +1,36 @@
 import './App.css';
 import {Container, Form, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from "./Components/Header";
 
 function App() {
   return (
-      <Container style={{width: '600px'}}>
-        <h1 className="text-center">Contact us</h1>
-        <Form>
-          <Form.Group controlId="formBasicEmail" className = "mb-2">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text>
-              We`ll never share your email with anyone else
-            </Form.Text>
-          </Form.Group>
+      <>
+        <Header />
 
-          <Form.Group controlId="formBasicPassword" className = "mb-2">
-            <Form.Label>Example textarea</Form.Label>
-            <Form.Control as="textarea" rows="3" />
-          </Form.Group>
+        <Container style={{width: '600px'}}>
+          <h1 className="text-center">Contact us</h1>
+          <Form>
+            <Form.Group controlId="formBasicEmail" className = "mb-2">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Text>
+                We`ll never share your email with anyone else
+              </Form.Text>
+            </Form.Group>
 
-          <Form.Group controlId="formBasicCheckbox" className = "mb-2">
-            <Form.Check type="checkbox" label="Check me out"/>
-          </Form.Group>
-          <Button variant="primary" type="submit">Submit</Button>
-        </Form>
-      </Container>
+            <Form.Group controlId="formBasicPassword" className = "mb-2">
+              <Form.Label>Example textarea</Form.Label>
+              <Form.Control as="textarea" rows="3" />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicCheckbox" className = "mb-2">
+              <Form.Check type="checkbox" label="Check me out"/>
+            </Form.Group>
+            <Button variant="primary" type="submit">Submit</Button>
+          </Form>
+        </Container>
+      </>
   );
 }
 
