@@ -1,0 +1,64 @@
+.edit {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.edit_item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 600px;
+    background-color: #FAFAFA;
+    border: 3px solid #E5E5E5;
+    border-radius: 25px;
+}
+
+.label_block {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.label_block-label {
+    width: 100%;
+}
+
+.label_block-label-input {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.edit_block_link {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.edit_link {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    border: 2px solid black;
+    border-radius: 14px;
+    color: black;
+}
+
+.edit_link_padding {
+    padding: 8px 15px 8px 15px;
+}
+
+.edit_button {
+    padding: 0px 0px 0px 0px;
+}
+
+.edit_link:hover {
+    color: #7A7A7A;
+}
